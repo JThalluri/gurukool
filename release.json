@@ -1,0 +1,11 @@
+{
+  "version": "fac9aa2e7dccf650",
+  "base": "/gurukool/",
+  "files": [
+    "icon-192.png",
+    "icon-512.png",
+    "icon-maskable.png",
+    "index.html",
+    "manifest.webmanifest"
+  ]
+}
