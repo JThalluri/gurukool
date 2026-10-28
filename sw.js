@@ -1,5 +1,5 @@
 ﻿/* Replaced by the hosted build. No user documents or third-party responses are cached. */
-const { base, version, prefix, assets } = {"base":"/gurukool/","version":"e0e9b7eaba6c8b9d","prefix":"bodhana:/gurukool/:","assets":["/gurukool/icon-192.png","/gurukool/icon-512.png","/gurukool/icon-maskable.png","/gurukool/index.html","/gurukool/manifest.webmanifest"]};
+const { base, version, prefix, assets } = {"base":"/gurukool/","version":"f9cb68d1a41ddeb3","prefix":"bodhana:/gurukool/:","assets":["/gurukool/icon-192.png","/gurukool/icon-512.png","/gurukool/icon-maskable.png","/gurukool/index.html","/gurukool/manifest.webmanifest"]};
 const cacheName = prefix + version;
 self.addEventListener('install', event => {
  event.waitUntil((async()=>{

@@ -327,7 +327,7 @@
     .${BZ} {
       position: absolute !important;
       top: 0.1in !important;
-      right: 0.14in !important;
+      right: calc(0.14in + 25px) !important;
       z-index: 1000 !important;
       pointer-events: none !important;
       user-select: none !important;
@@ -342,7 +342,8 @@
       print-color-adjust: exact !important;
     }
     [data-paper-size="statement"] > .${BZ} {
-      top: 0.04in !important;
+      top: calc(0.04in + 15px) !important;
+      right: calc(0.14in + 20px) !important;
       font-size: 12pt !important;
     }
   `}const wm=[".paper-page",".pv-worksheet",".frac-worksheet",".mg-worksheet",".mp-puzzle-page",".sdk-puzzle-page",".wp-puzzle-block",".hw-worksheet",".award-cert-page"].join(","),li=".award-cert-page.is-landscape",Jc=wm.split(",").map(l=>`.print-document > ${l}`).join(","),Zi=Jc.split(",").map(l=>`${l}:last-child`).join(",");function il(){const l=document.querySelector(".tool-pages"),Z=l?.querySelectorAll(wm);if(!l||!Z?.length){window.print();return}const d=[...Z].some(Y=>Y.matches(li)),c=zm([...Z]),b=`${c.widthIn}in`,m=`${c.heightIn}in`,W=c.cssSize,G=document.createElement("iframe");G.setAttribute("aria-hidden","true"),G.style.position="fixed",G.style.right="0",G.style.bottom="0",G.style.width="0",G.style.height="0",G.style.border="0",G.style.visibility="hidden",document.body.appendChild(G);const i=G.contentWindow,a=G.contentDocument;if(!i||!a){G.remove(),window.print();return}const X=[...document.querySelectorAll('link[rel="stylesheet"], style')].map(Y=>Y.outerHTML).join(`
